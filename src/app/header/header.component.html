@@ -1,0 +1,109 @@
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-black shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../../assets/vzLogo.png" alt="Grynow" class="header-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav-underline ms-auto">
+                    <li class="nav-item dropdown" (mouseover)="toggleOurWork(true)" (mouseleave)="toggleOurWork(false)">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Our Work
+                        </a>
+                        <ul class="dropdown-menu" [class.show]="isOurWorkVisible" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="#">Influencer Marketing Campaigns in India</a></li>
+                            <li><a class="dropdown-item" href="#">Influencer Marketing Campaigns in Middle East</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown" (mouseover)="toggleServices(true)"
+                        (mouseleave)="toggleServices(false)">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" [class.show]="isServicesVisible" aria-labelledby="aboutDropdown">
+                            <li>
+                                <span class="dropdown-toggle-btn second-level-btn"> <i class="fab fa-youtube"></i>
+                                    Youtube </span>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/youtube-influencer-marketing-agency-india.html"> Hire YouTubers </a>
+                                    </li>
+                                    <li><a href="/best-youtube-video-production-company-in-india.html"> Youtube Video
+                                            Production </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="dropdown-toggle-btn second-level-btn"> <i class="fab fa-instagram"></i>
+                                    Instagram </span>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/instagram-influencer-marketing-agency.html">Hire Instagrammers</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="dropdown-toggle-btn second-level-btn"> <i class="fas fa-users"></i> Hire
+                                    Influencers </span>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/micro-influencer-marketing-agency-india.html"> Hire Micro Influencers
+                                        </a></li>
+                                    <li><a href="/top-nano-influencer-marketing-agency-in-india.html"> Hire Nano
+                                            Influencers </a></li>
+                                    <li><a href="/top-regional-influencer-marketing-agency-in-india.html"> Hire Regional
+                                            Influencers </a></li>
+                                    <li><a href="/celebrity-influencer-marketing-agency-india.html"> Hire Celebrity
+                                            Influencers </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="dropdown-toggle-btn second-level-btn"> <i class="fas fa-th-list"></i>
+                                    Others </span>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/top-user-generated-video-company-in-india.html">User-Generated
+                                            Video</a></li>
+                                    <li><a href="/top-meme-marketing-agency-india.html"> Meme Marketing </a></li>
+                                    <li><a href="/linkedln-influencer-marketing-agency-in-india.html"> Linkedln
+                                            Influencer Marketing </a></li>
+                                    <li><a href="/video-production-company-in-india.html"> Video Production </a></li>
+                                    <li><a href="/top-twitch-influencer-marketing-agency-in-india.html"> Twitch
+                                            Influencer Marketing </a></li>
+                                    <li><a href="/top-tik-tok-marketing-agency-india.html">Tik Tok</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown" (mouseover)="toggleCountries(true)"
+                        (mouseleave)="toggleCountries(false)">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Countries
+                        </a>
+                        <ul class="dropdown-menu" [class.show]="isCountriesVisible" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="#">Influencer Marketing Campaigns in India2</a></li>
+                            <li><a class="dropdown-item" href="#">Influencer Marketing Campaigns in Middle East2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown" (mouseover)="toggleAbout(true)" (mouseleave)="toggleAbout(false)">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" [class.show]="isAboutVisible" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="#">Influencer Marketing Campaigns in India</a></li>
+                            <li><a class="dropdown-item" href="#">Influencer Marketing Campaigns in Middle East</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
