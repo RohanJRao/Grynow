@@ -26,56 +26,18 @@
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Services
                         </a>
-                        <ul class="dropdown-menu" [class.show]="isServicesVisible" aria-labelledby="aboutDropdown">
-                            <li>
-                                <span class="dropdown-toggle-btn second-level-btn"> <i class="fab fa-youtube"></i>
-                                    Youtube </span>
-                                <ul class="dropdown-menu">
-                                    <li><a href="/youtube-influencer-marketing-agency-india.html"> Hire YouTubers </a>
-                                    </li>
-                                    <li><a href="/best-youtube-video-production-company-in-india.html"> Youtube Video
-                                            Production </a></li>
+                        <div class="dropdown-menu p-3 servicesDdl" [class.show]="isServicesVisible" aria-labelledby="ServicesDropdown">
+                            <div class="row">
+                              <div class="col-md-6 col-lg-3" *ngFor="let service of servicesList">
+                                <h5 class="dropdown-header"><i [class]="service.iconClass"></i> {{ service.heading }}</h5>
+                                <ul class="list-unstyled">
+                                  <li *ngFor="let option of service.options">
+                                    <a class="dropdown-item" [routerLink]="option.link">{{ option.label }}</a>
+                                  </li>
                                 </ul>
-                            </li>
-                            <li>
-                                <span class="dropdown-toggle-btn second-level-btn"> <i class="fab fa-instagram"></i>
-                                    Instagram </span>
-                                <ul class="dropdown-menu">
-                                    <li><a href="/instagram-influencer-marketing-agency.html">Hire Instagrammers</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span class="dropdown-toggle-btn second-level-btn"> <i class="fas fa-users"></i> Hire
-                                    Influencers </span>
-                                <ul class="dropdown-menu">
-                                    <li><a href="/micro-influencer-marketing-agency-india.html"> Hire Micro Influencers
-                                        </a></li>
-                                    <li><a href="/top-nano-influencer-marketing-agency-in-india.html"> Hire Nano
-                                            Influencers </a></li>
-                                    <li><a href="/top-regional-influencer-marketing-agency-in-india.html"> Hire Regional
-                                            Influencers </a></li>
-                                    <li><a href="/celebrity-influencer-marketing-agency-india.html"> Hire Celebrity
-                                            Influencers </a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span class="dropdown-toggle-btn second-level-btn"> <i class="fas fa-th-list"></i>
-                                    Others </span>
-                                <ul class="dropdown-menu">
-                                    <li><a href="/top-user-generated-video-company-in-india.html">User-Generated
-                                            Video</a></li>
-                                    <li><a href="/top-meme-marketing-agency-india.html"> Meme Marketing </a></li>
-                                    <li><a href="/linkedln-influencer-marketing-agency-in-india.html"> Linkedln
-                                            Influencer Marketing </a></li>
-                                    <li><a href="/video-production-company-in-india.html"> Video Production </a></li>
-                                    <li><a href="/top-twitch-influencer-marketing-agency-in-india.html"> Twitch
-                                            Influencer Marketing </a></li>
-                                    <li><a href="/top-tik-tok-marketing-agency-india.html">Tik Tok</a></li>
-
-                                </ul>
-                            </li>
-                        </ul>
+                              </div>
+                            </div>
+                          </div>
                     </li>
                     <li class="nav-item dropdown" (mouseover)="toggleCountries(true)"
                         (mouseleave)="toggleCountries(false)">

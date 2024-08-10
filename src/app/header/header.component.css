@@ -21,4 +21,60 @@
   .navbar-nav .btn-primary:hover {
     background-color: #0056b3;
   }
+  @media only screen and (min-width: 992px) {
+    .header-links>ul>li.menu-item-has-children.dropdown.has-mega-dropdown:hover>ul.dropdown-menu {
+        display: flex;
+    }
+}
+@media only screen and (min-width: 992px) {
+  .header-links>ul>li.menu-item-has-children.dropdown.has-mega-dropdown>ul.dropdown-menu {
+      top: 100%;
+      opacity: 1;
+      visibility: visible;
+      left: 0;
+      z-index: 9999;
+      left: auto;
+      right: 0;
+      display: none;
+      box-shadow: 0 5px 5px 0 rgb(0 0 0 / .1);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .header-links>ul>li.menu-item-has-children.dropdown.has-mega-dropdown ul.dropdown-menu {
+      min-width: 100%;
+      margin: 0;
+      visibility: visible;
+      opacity: 1;
+      top: 100%;
+  }
+}
+
+/* .dropdown-menu {
+  width: 100%;
+} */
+
+.dropdown-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.dropdown-item {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.list-unstyled {
+  margin: 0;
+  padding: 0;
+}
+
+.servicesDdl{
+  width: 850px;
+  min-width: max-content;
+  margin-left: -400px;
+}
+.dropdown-header{
+  color: #ff0000;
+}
+
   
