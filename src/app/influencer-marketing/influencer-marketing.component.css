@@ -1,0 +1,78 @@
+/* Global Styles */
+:root {
+    --branding-red: #de0d40;
+    --branding-purple: #504ed8;
+    --dark-heading: #091238;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+}
+.influ-text h2{
+    text-align: center;
+}
+
+/* Header Styling */
+.influ-text h2 span {
+
+    
+    color: #ec003e;
+    font-weight: 600;
+}
+
+/* Wrapper for Rows */
+.content-wrapper {
+    border: 2px solid #4a4949; /* Single border around all columns */
+    border-radius: 15px; /* Rounded corners */
+    padding: 2rem; /* Padding inside the border */
+    margin-top: 2rem; /* Top margin */
+    box-shadow: 0 4px 9px 2px rgba(0, 0, 0, 0.1); /* Add shadow for better visuals */
+}
+
+/* Adjust Row Spacing */
+.row {
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
+/* Icon Styles */
+.Star-badge, .et-icon, .Global-icon, .ai-icon {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto; /* Center icon horizontally */
+}
+
+.Star-badge {
+    background-image: url('/assets/star-medal.png');
+}
+
+.et-icon {
+    background-image: url('/assets/Et.png');
+}
+
+.Global-icon {
+    background-image: url('/assets/earth.png');
+}
+
+.ai-icon {
+    background-image: url('/assets/Ai.png');
+}
+
+/* Text Styles */
+.stats-heading {
+    font-weight: bold;
+    font-size: 2rem; /* Adjust the size as needed */
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: blue;
+    text-align: center; /* Center the heading horizontally */
+}
+
+p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    color: #333333;
+}

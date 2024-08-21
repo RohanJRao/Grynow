@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
-import { MarketingCompanyComponent } from './marketing-company/marketing-company.component';
-import { MarketingExpertsComponent } from './marketing-experts/marketing-experts.component';
-
+import { InfluencerMarketingComponent } from './influencer-marketing/influencer-marketing.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HeaderComponent,MarketingCompanyComponent,MarketingExpertsComponent],
+  imports: [RouterOutlet,HeaderComponent,InfluencerMarketingComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
